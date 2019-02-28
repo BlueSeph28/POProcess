@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" translatable="false">POProcess</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_default">Default</string>
+    <string name="title_activity_manage">Manage</string>
+    <string name="title_activity_new">New</string>
+    <string name="title_activity_model_switch" translatable="false">model_switch</string>
+    <string name="title_activity_model_edittext" translatable="false">model_edittext</string>
+    <string name="title_activity_model_seekbar" translatable="false">model_seekbar</string>
+    <string name="title_activity_record">Record</string>
+    <string name="name_config">Name</string>
+    <string name="wifi_config" translatable="false">Wi-fi</string>
+    <string name="interval_config">Interval</string>
+    <string name="bluetooth_config">Bluetooth</string>
+    <string name="data_config">Data Traffic</string>
+    <string name="airplane_config">Airplane Mode</string>
+    <string name="gps_config" translatable="false">Gps</string>
+    <string name="brightness_config">Brightness</string>
+    <string name="bMode_config">Automatic Brightness</string>
+    <string name="check_config">Check Position</string>
+    <string name="save_config">Save</string>
+    <string name="created_manage">Created Configurations</string>
+    <string name="notifications_manage">Enable Notifications</string>
+    <string name="edit_manage">Edit</string>
+    <string name="erase_manage">Erase</string>
+    <string name="name_empty">Name is Empty, </string>
+    <string name="interval_empty">Interval is Empty, </string>
+    <string name="position_empty">Position is Empty, </string>
+    <string name="error_empty">Fill the spaces</string>
+    <string name="scan">Scanning…</string>
+    <string name="insert_HM">Insert hours and minutes</string>
+    <string name="manage_settings_saved">Settings saved</string>
+    <string name="battery">% Battery</string>
+    <string name="interval_default">Interval is empty</string>
+    <string name="saved_changes_default">The changes will take effect when the position default is running</string>
+    <string name="buy_button">Remove advertising</string>
+    <string name="information">POProcess is the software that does the dirty work for you, simply
+        specify the services you do not want to use in certain positions and also specifies the position
+        and ready, POProcess change the settings automatically. You\'re upset of advertising, you can get
+        rid of it, helping with a donation, also aids the application continue to update and keep creating
+        new apps like this.</string>
+    <string name="battery_description">Battery Percentage</string>
+    <string name="conf_running">Configuration is running now</string>
+    <string name="use_settings">Use settings to configure</string>
+    <string name="name_record">Name</string>
+    <string name="time_record">Time</string>
+    <string name="date_record">Date</string>
+    <string name="record">Record</string>
+    <string name="switch_textRecord">Enable Record</string>
+
+    <string name="hello_world">Hello world!</string>
+
+</resources>

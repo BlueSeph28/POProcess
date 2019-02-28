@@ -1,0 +1,316 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="com.luislopez.poprocess.New">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_config"
+                android:id="@+id/name_text"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/text_size"
+                android:layout_marginTop="@dimen/image_marginTop" />
+
+            <customAndroid.CustomEditText
+                android:layout_width="@dimen/editText_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:id="@+id/name_editText"
+                android:maxLength="15"
+                android:layout_alignBaseline="@+id/name_text"
+                android:layout_alignBottom="@+id/name_text"
+                android:layout_alignRight="@+id/wifi_switch"
+                android:layout_alignEnd="@+id/wifi_switch" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/interval_config"
+                android:id="@+id/time_text"
+                android:layout_below="@+id/wifi_image"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/marginTop_new"
+                android:textSize="@dimen/text_size" />
+
+
+            <ImageView
+                android:layout_width="@dimen/imagesSize"
+                android:layout_height="@dimen/imagesSize"
+                android:id="@+id/wifi_image"
+                android:src="@drawable/wifi"
+                android:layout_below="@+id/name_text"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/marginTop_new" />
+
+            <ImageView
+                android:layout_width="@dimen/imagesSize"
+                android:layout_height="@dimen/imagesSize"
+                android:id="@+id/bluetooth_image"
+                android:layout_marginTop="@dimen/image_marginTop"
+                android:layout_below="@+id/time_text"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/bluetooth" />
+
+            <ImageView
+                android:layout_width="@dimen/imagesSize"
+                android:layout_height="@dimen/imagesSize"
+                android:id="@+id/data_image"
+                android:layout_below="@+id/bluetooth_image"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/image_marginTop"
+                android:src="@drawable/data" />
+
+            <ImageView
+                android:layout_width="@dimen/imagesSize"
+                android:layout_height="@dimen/imagesSize"
+                android:id="@+id/calls_image"
+                android:layout_below="@+id/data_image"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/image_marginTop"
+                android:src="@drawable/mobile" />
+
+            <ImageView
+                android:layout_width="@dimen/imagesSize"
+                android:layout_height="@dimen/imagesSize"
+                android:id="@+id/bright_image"
+                android:layout_below="@+id/calls_image"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/image_marginTop"
+                android:src="@drawable/bright" />
+
+            <SeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bright_seekbar"
+                android:layout_toEndOf="@+id/bright_text"
+                android:max="255"
+                android:indeterminate="false"
+                android:layout_alignTop="@+id/bright_text"
+                android:layout_toRightOf="@+id/bright_text"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wifi_switch"
+                android:track="@drawable/track"
+                android:thumb="@drawable/thumb_custom"
+                android:switchTextAppearance="@style/SwitchTextColor"
+                android:layout_alignTop="@+id/wifi_text"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:checked="false" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bluetooth_switch"
+                android:track="@drawable/track"
+                android:thumb="@drawable/thumb_custom"
+                android:switchTextAppearance="@style/SwitchTextColor"
+                android:layout_alignBottom="@+id/bluetooth_text"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/data_switch"
+                android:track="@drawable/track"
+                android:thumb="@drawable/thumb_custom"
+                android:switchTextAppearance="@style/SwitchTextColor"
+                android:layout_alignBaseline="@+id/data_text"
+                android:layout_alignBottom="@+id/data_text"
+                android:layout_alignLeft="@+id/bluetooth_switch"
+                android:layout_alignStart="@+id/bluetooth_switch" />
+
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/calls_switch"
+                android:track="@drawable/track"
+                android:thumb="@drawable/thumb_custom"
+                android:switchTextAppearance="@style/SwitchTextColor"
+                android:layout_alignTop="@+id/calls_image"
+                android:layout_alignLeft="@+id/data_switch"
+                android:layout_alignStart="@+id/data_switch"
+                android:layout_marginTop="@dimen/text_marginBotttom" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wifi_config"
+                android:id="@+id/wifi_text"
+                android:layout_toEndOf="@+id/wifi_image"
+                android:layout_alignBottom="@+id/wifi_image"
+                android:layout_toRightOf="@+id/wifi_image"
+                android:layout_marginBottom="@dimen/text_marginBotttom"
+                android:layout_marginLeft="@dimen/image_marginTop"
+                android:textSize="@dimen/text_size"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bluetooth_config"
+                android:id="@+id/bluetooth_text"
+                android:layout_toEndOf="@+id/wifi_image"
+                android:textSize="@dimen/text_size"
+                android:layout_alignTop="@+id/bluetooth_image"
+                android:layout_alignLeft="@+id/wifi_text"
+                android:layout_alignStart="@+id/wifi_text"
+                android:layout_marginTop="@dimen/text_marginBotttom" />
+
+            <TextView
+                android:layout_width="@dimen/tooMuchText_width"
+                android:layout_height="@dimen/tooMuchText_height"
+                android:text="@string/data_config"
+                android:id="@+id/data_text"
+                android:layout_toEndOf="@+id/wifi_image"
+                android:textSize="@dimen/text_size"
+                android:gravity="center_vertical"
+                android:layout_below="@+id/bluetooth_image"
+                android:layout_alignLeft="@+id/bluetooth_text"
+                android:layout_alignStart="@+id/bluetooth_text"
+                android:layout_marginTop="@dimen/tooMuchText_marginTop" />
+
+            <TextView
+                android:layout_width="@dimen/tooMuchText_width"
+                android:layout_height="@dimen/tooMuchText_height"
+                android:text="@string/airplane_config"
+                android:id="@+id/calls_text"
+                android:layout_toEndOf="@+id/wifi_image"
+                android:textSize="@dimen/text_size"
+
+                android:gravity="center_vertical"
+                android:layout_alignTop="@+id/calls_image"
+                android:layout_alignLeft="@+id/data_text"
+                android:layout_alignStart="@+id/data_text" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/brightness_config"
+                android:id="@+id/bright_text"
+                android:layout_toEndOf="@+id/wifi_image"
+                android:textSize="@dimen/text_size"
+                android:layout_alignTop="@+id/bright_image"
+                android:layout_alignLeft="@+id/calls_text"
+                android:layout_alignStart="@+id/calls_text"
+                android:layout_marginTop="@dimen/text_marginBotttom" />
+
+            <TextView
+                android:layout_width="@dimen/tooMuchText_widthNoImage"
+                android:layout_height="wrap_content"
+                android:text="@string/bMode_config"
+                android:id="@+id/auto_text"
+                android:layout_toEndOf="@+id/wifi_image"
+                android:textSize="@dimen/text_size"
+                android:layout_below="@+id/bright_image"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/text_marginBotttom" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/autobright_switch"
+                android:track="@drawable/track"
+                android:thumb="@drawable/thumb_custom"
+                android:switchTextAppearance="@style/SwitchTextColor"
+                android:layout_alignBottom="@+id/auto_text"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="@dimen/image_marginTop" />
+
+            <customAndroid.CustomEditText
+                android:layout_width="@dimen/editText_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/time_editText"
+                android:background="@drawable/edittext"
+                android:layout_alignBottom="@+id/time_text"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:editable="false"
+                android:focusable="false" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check_config"
+                android:background="@drawable/blue_button"
+                android:id="@+id/position_btn"
+                android:layout_below="@+id/auto_text"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/text_marginBotttom"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/white"
+                android:paddingLeft="@dimen/paddingPosition_button"
+                android:paddingRight="@dimen/paddingPosition_button" />
+
+
+
+                <ListView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/listViewNew_height"
+                    android:id="@+id/wifi_listview"
+                    android:layout_below="@+id/position_btn"
+                    android:layout_marginTop="@dimen/text_marginBotttom"
+                    android:layout_marginBottom="@dimen/text_marginBotttom"
+                    android:background="@drawable/listviewbg"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save_config"
+                    android:background="@drawable/red_button"
+                    android:layout_below="@+id/wifi_listview"
+                    android:id="@+id/save_button"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

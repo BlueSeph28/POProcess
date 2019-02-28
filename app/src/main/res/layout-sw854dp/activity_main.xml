@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/relayout">
+
+    <ImageView
+        android:layout_width="@dimen/battery_width"
+        android:layout_height="@dimen/battery_height"
+        android:id="@+id/battery"
+        android:focusableInTouchMode="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/battery_description" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/percentaje"
+        android:layout_below="@+id/battery"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="@dimen/battery_text" />
+
+    <Button
+        android:layout_width="@dimen/mainSize_buttons"
+        android:layout_height="@dimen/mainSize_buttons"
+        android:id="@+id/btn_new"
+        android:background="@drawable/new_button"
+        android:layout_below="@+id/percentaje"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/marginTop_buttons"
+        android:layout_marginLeft="@dimen/marginFromLimit_buttons" />
+
+    <Button
+        android:layout_width="@dimen/mainSize_buttons"
+        android:layout_height="@dimen/mainSize_buttons"
+        android:id="@+id/btn_default"
+        android:background="@drawable/default_button"
+        android:layout_alignTop="@+id/btn_new"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/marginFromLimit_buttons" />
+
+    <Button
+        android:layout_width="@dimen/mainSize_buttons"
+        android:layout_height="@dimen/mainSize_buttons"
+        android:id="@+id/btn_manage"
+        android:background="@drawable/manage_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/btn_new"
+        android:layout_alignStart="@+id/btn_new"
+        android:layout_marginBottom="@dimen/marginTop_secondButtons" />
+
+    <Button
+        android:layout_width="@dimen/mainSize_buttons"
+        android:layout_height="@dimen/mainSize_buttons"
+        android:id="@+id/btn_about"
+        android:background="@drawable/about_button"
+        android:layout_alignTop="@+id/btn_manage"
+        android:layout_alignLeft="@+id/btn_default"
+        android:layout_alignStart="@+id/btn_default" />
+
+    <TextView
+        android:layout_width="@dimen/textButton_width"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_new"
+        android:id="@+id/textView"
+        android:textSize="@dimen/MainTextSize_buttons"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/btn_new"
+        android:layout_alignLeft="@+id/btn_new"
+        android:layout_alignStart="@+id/btn_new" />
+
+    <TextView
+        android:layout_width="@dimen/textButton_width"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_default"
+        android:id="@+id/textView2"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/MainTextSize_buttons"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignLeft="@+id/btn_default"
+        android:layout_alignStart="@+id/btn_default" />
+
+    <TextView
+        android:layout_width="@dimen/ManageText_width"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_manage"
+        android:id="@+id/textView3"
+        android:textSize="@dimen/MainTextSize_buttons"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_marginLeft="7dp" />
+
+    <TextView
+        android:layout_width="@dimen/textButton_width"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_about"
+        android:id="@+id/textView4"
+        android:textSize="@dimen/MainTextSize_buttons"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/btn_about"
+        android:layout_alignLeft="@+id/btn_about"
+        android:layout_alignStart="@+id/btn_about" />
+
+</RelativeLayout>

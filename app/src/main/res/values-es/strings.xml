@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_activity_about">Acerca</string>
+    <string name="title_activity_default">Default</string>
+    <string name="title_activity_manage">Manejar</string>
+    <string name="title_activity_new">Nuevo</string>
+    <string name="title_activity_record">Registro</string>
+    <string name="name_config">Nombre</string>
+    <string name="interval_config">Intervalo</string>
+    <string name="bluetooth_config">Bluetooth</string>
+    <string name="data_config">Tráfico de datos</string>
+    <string name="airplane_config">Modo Avión</string>
+    <string name="brightness_config">Brillo</string>
+    <string name="bMode_config">Brillo Automático</string>
+    <string name="check_config">Ver Posición</string>
+    <string name="save_config">Guardar</string>
+
+    <string name="created_manage">Configuraciones Creadas</string>
+    <string name="notifications_manage">Habilitar Notificaciones</string>
+
+    <string name="edit_manage">Editar</string>
+    <string name="erase_manage">Borrar</string>
+
+    <string name="name_empty">Nombre vacío, </string>
+    <string name="interval_empty">Intervalo vacío, </string>
+    <string name="position_empty">Posición vacía, </string>
+    <string name="error_empty">Llena los espacios</string>
+    <string name="scan">Escaneando&#8230;</string>
+    <string name="insert_HM">Inserta horas y minutos</string>
+    <string name="manage_settings_saved">Ajustes guardados</string>
+    <string name="battery">% Batería</string>
+    <string name="interval_default">Intervalo vacío</string>
+    <string name="saved_changes_default">Los cambios tendrán efecto cuando se ejecute Default</string>
+    <string name="buy_button">Remover publicidad</string>
+    <string name="information">POProcess es la aplicación que hace el trabajo sucio por ti,
+        simplemente especificas los servicios que no quieres usar en ciertas posiciones e
+        igualmente especifica la posición y listo, POProcess cambiará la configuración automaticamente.
+Estás enfadado de la publicidad, puedes deshacerte de ella, ayudando con una donación,
+        igualmente ayudas a que la aplicación se siga actualizando y a seguir creando nuevas
+        aplicaciones como esta.</string>
+    <string name="battery_description">Porcentaje de batería</string>
+    <string name="conf_running">Se está ejecutando</string>
+    <string name="use_settings">Usa ajustes para configurar</string>
+    <string name="name_record">Nombre</string>
+    <string name="time_record">Hora</string>
+    <string name="date_record">Fecha</string>
+    <string name="record">Registro</string>
+    <string name="switch_textRecord">Habilitar Registro</string>
+
+</resources>

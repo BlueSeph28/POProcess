@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/config_text"
+        android:textSize="@dimen/text_size"
+        android:layout_alignBaseline="@+id/erase_button"
+        android:layout_alignBottom="@+id/erase_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="@dimen/buttonAdapter_width"
+        android:layout_height="@dimen/buttonAdapter_height"
+        android:text="@string/edit_manage"
+        android:background="@drawable/blue_button"
+        android:id="@+id/edit_button"
+        android:textSize="@dimen/text_size"
+        android:layout_marginLeft="@dimen/buttonAdapter_marginLeft"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/white" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="@dimen/buttonAdapter_width"
+        android:layout_height="@dimen/buttonAdapter_height"
+        android:textSize="@dimen/text_size"
+        android:text="@string/erase_manage"
+        android:background="@drawable/red_button"
+        android:id="@+id/erase_button"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/edit_button"
+        android:layout_toStartOf="@+id/edit_button"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
